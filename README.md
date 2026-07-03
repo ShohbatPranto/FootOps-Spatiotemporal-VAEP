@@ -43,8 +43,8 @@ $$V(a_i) = \\Delta P_{scores}(a_i) - \\Delta P_{concedes}(a_i)$$
 
 ## 📂 Repository Structure
 
+```text
 vaep_xt_pipeline/
-│
 ├── data_store/                 # Automated Local Data Lake
 │   ├── raw_json/               # Raw StatsBomb Match Events
 │   └── feature_store/          # Cached .parquet SPADL matrices
@@ -58,12 +58,15 @@ vaep_xt_pipeline/
 │   │   ├── ingestion.py        # StatsBomb API Handshake Layer
 │   │   ├── spadl.py            # Coordinate Normalizer (120x80 -> 105x68)
 │   │   └── feature_store.py    # Parquet Caching & Storage Orchestrator
+│   │
 │   ├── features/
 │   │   ├── engineering.py      # Spatial & Temporal Feature Math
 │   │   └── aggregation.py      # 2D Grid Threat Aggregation
+│   │
 │   ├── models/
 │   │   ├── train.py            # Dual LightGBM Training & Chronological Splitting
 │   │   └── valuation.py        # VAEP ΔV Mathematics & Possession Logic
+│   │
 │   └── visualization/
 │       └── plots.py            # mplsoccer Dark-mode rendering
 │
@@ -71,9 +74,10 @@ vaep_xt_pipeline/
 ├── run_pipeline_test.py        # Integration test for single-match parsing
 ├── run_scaleup.py              # Phase 6 Orchestrator (Model Training on Cache)
 └── app.py                      # Phase 7 Streamlit MLOps Dashboard
+```
 
 
-🚀 Installation & Quick Start
+#🚀 Installation & Quick Start
 1. Environment Setup (Isolated Workspace)
 Using standard venv to prevent dependency conflicts (e.g. bypassing Windows Store Python hangs).
 
