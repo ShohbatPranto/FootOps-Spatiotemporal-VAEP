@@ -77,7 +77,7 @@ vaep_xt_pipeline/
 ```
 
 
-#🚀 Installation & Quick Start
+# 🚀 Installation & Quick Start
 1. Environment Setup (Isolated Workspace)
 Using standard venv to prevent dependency conflicts (e.g. bypassing Windows Store Python hangs).
 
@@ -94,7 +94,7 @@ python -m ensurepip --upgrade
 pip install -r requirements.txt
 
 
-#2. Execution Flow
+# 2. Execution Flow
 Run the automated pipeline to flood the Data Lake, compute the Parquet caches, and train the dual-estimators on 120,000+ actions.
 
 python run_scaleup.py
@@ -103,7 +103,7 @@ streamlit run app.py
 
 
 
-#Top Spatial Feature Importances (Tree Splits)
+# Top Spatial Feature Importances (Tree Splits)
 The model relies heavily on geometric proximity, proving mathematically that the algorithm accurately "sees" the pitch:
 
 end_dist_to_goal
